@@ -57,7 +57,7 @@ llm = ChatDeepSeek(
     temperature=0,
     max_tokens=None,
     timeout=None,
-    max_retries=2,    
+    max_retries=2,
     # other params...
 )
 
@@ -166,8 +166,6 @@ print(result["output"])
 #     print(chunk.text(), end="")
 
 # from openai import OpenAI
-
-# client = OpenAI(api_key="", base_url="https://api.deepseek.com")
 
 # response = client.chat.completions.create(
 #     model="deepseek-chat",
