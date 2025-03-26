@@ -57,8 +57,7 @@ llm = ChatDeepSeek(
     temperature=0,
     max_tokens=None,
     timeout=None,
-    max_retries=2,
-    api_key="sk-e4e5862ddc5046f496cdb306775085cb",
+    max_retries=2,    
     # other params...
 )
 
@@ -168,7 +167,7 @@ print(result["output"])
 
 # from openai import OpenAI
 
-# client = OpenAI(api_key="sk-e4e5862ddc5046f496cdb306775085cb", base_url="https://api.deepseek.com")
+# client = OpenAI(api_key="", base_url="https://api.deepseek.com")
 
 # response = client.chat.completions.create(
 #     model="deepseek-chat",
