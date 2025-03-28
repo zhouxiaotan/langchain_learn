@@ -1,0 +1,5 @@
+pip install unstructured
+pip install chromadb
+pip install -U pdfminer
+#pip install "pdfminer.six==20200726"  # Version known to have open_filename
+pip install -U rapidocr-onnxruntime

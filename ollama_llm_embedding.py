@@ -1,6 +1,6 @@
-from llama_index.llms.openai import OpenAI
+# from llama_index.llms.openai import OpenAI
 
-from llama_index.llms.ollama import Ollama
+# from llama_index.llms.ollama import Ollama
 
 # llm = Ollama(
 #     base_url="http://localhost:11434",model="deepseek-r1:7b",request_timeout=300
