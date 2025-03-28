@@ -58,6 +58,7 @@ llm = ChatDeepSeek(
     max_tokens=None,
     timeout=None,
     max_retries=2,
+    api_key="sk-e4e5862ddc5046f496cdb306775085cb",
     # other params...
 )
 
@@ -166,6 +167,8 @@ print(result["output"])
 #     print(chunk.text(), end="")
 
 # from openai import OpenAI
+
+# client = OpenAI(api_key="sk-e4e5862ddc5046f496cdb306775085cb", base_url="https://api.deepseek.com")
 
 # response = client.chat.completions.create(
 #     model="deepseek-chat",
