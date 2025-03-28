@@ -2,6 +2,10 @@ from langchain_deepseek import ChatDeepSeek
 from langchain_core.output_parsers import StrOutputParser
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.tools import tool
+
+from dotenv import load_dotenv
+load_dotenv()
+
 from langchain_core.prompts import PromptTemplate
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder  # 修正导入
 #from langchain.tools.render import format_tool_to_openai_function  # 关键新增
@@ -58,7 +62,7 @@ llm = ChatDeepSeek(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    api_key="sk-e4e5862ddc5046f496cdb306775085cb",
+    api_key=os.getenv("DEEPSEEK_KEY"),
     # other params...
 )
 
@@ -168,7 +172,7 @@ print(result["output"])
 
 # from openai import OpenAI
 
-# client = OpenAI(api_key="sk-e4e5862ddc5046f496cdb306775085cb", base_url="https://api.deepseek.com")
+# client = OpenAI(api_key=os.getenv("DEEPSEEK_KEY"), base_url="https://api.deepseek.com")
 
 # response = client.chat.completions.create(
 #     model="deepseek-chat",

@@ -1,5 +1,4 @@
-pip install unstructured
-pip install chromadb
-pip install -U pdfminer
-#pip install "pdfminer.six==20200726"  # Version known to have open_filename
-pip install -U rapidocr-onnxruntime
+#ollama.exe
+#ollama pull deepseek-r1
+#ollama pull qwen2.5:7b
+#ollama pull nomic-embed-text:latest
