@@ -2,7 +2,7 @@ from langchain_deepseek import ChatDeepSeek
 from langchain_core.output_parsers import StrOutputParser
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.tools import tool
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
