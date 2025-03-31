@@ -2,6 +2,10 @@ from langchain_community.document_loaders import TextLoader
 from langchain_community.vectorstores import SQLiteVec
 from langchain_text_splitters import CharacterTextSplitter
 
+import os
+current_working_directory = os.getcwd()
+print("当前工作目录:", current_working_directory)
+
 # load the document and split it into chunks
 # loader = TextLoader("C:\\WorkSpace\\LangChainLearning\\chapter2\\langchain_learn\\state_of_the_union.txt")
 # documents = loader.load()
@@ -16,7 +20,7 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_ollama.embeddings import OllamaEmbeddings
 
 embedding = OllamaEmbeddings(base_url="http://localhost:11434",model="nomic-embed-text:latest")
-connection = SQLiteVec.create_connection(db_file="C:\\WorkSpace\\LangChainLearning\\chapter2\\langchain_learn\\vec.db")
+connection = SQLiteVec.create_connection(db_file="./db/vec.db")
 
 db1 = SQLiteVec(
     table="state_union", embedding=embedding, connection=connection
